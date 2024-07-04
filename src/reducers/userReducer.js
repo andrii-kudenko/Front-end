@@ -8,5 +8,3 @@ export function userReducer(state = null, action) {
             return state;
     }
 }
-
-// LOGGED_IN_USER
