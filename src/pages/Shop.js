@@ -58,6 +58,9 @@ const Shop = () => {
         // console.log("load products on user search", text)
         const delayed = setTimeout(() => {
             fetchProducts({query: text});
+            if (!text) {
+                loadAllProducts();
+            }
         }, 300)
         return () => clearTimeout(delayed);
     }, [text])
