@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@stripe/react-stripe-js": "^2.7.3",
+    "@stripe/stripe-js": "^4.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -12,6 +14,7 @@
     "i": "^0.3.7",
     "lodash": "^4.17.21",
     "react": "^16.13.1",
+    "react-datepicker": "^7.3.0",
     "react-dom": "^16.13.1",
     "react-image-file-resizer": "^0.4.8",
     "react-modal-image": "^2.6.0",

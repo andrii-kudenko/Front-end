@@ -15,11 +15,11 @@ const Cart = ({history}) => {
     }
 
     const saveOrderToDb = () => {
-        // console.log("cart", JSON.stringify(cart, null, 4))
+        console.log(user.token)
         userCart(cart, user.token)
         .then(res => {
             console.log('CART POST RES', res)
-            if (res.data.ok) history.pushState("/checkout")
+            if (res.data.ok) history.push("/checkout")
         })
         .catch(err => console.log("cart save error", err))
     }
@@ -54,7 +54,8 @@ const Cart = ({history}) => {
             <div className='col-md-4'>
                 <h4>Order Summary</h4>
                 <hr/>
-                <p>Products</p>
+                <b>Products ({cart.length})</b>
+                <hr/>
                 {cart.map((c, i) => (
                     <div key={i}>
                         <p>{c.title} x {c.count} = ${c.price * c.count}</p>

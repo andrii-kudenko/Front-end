@@ -3,6 +3,7 @@ import ModalImage from 'react-modal-image'
 import laptop from '../../images/laptop.png'
 import { useDispatch } from "react-redux";
 import {CheckCircleOutlined, CloseCircleOutlined, CloseOutlined} from '@ant-design/icons'
+import {toast} from 'react-toastify'
 
 const ProductCardInCheckout = ({p}) => {
     const colors = ["Black", "Brown", "Silver", "White", "Blue"];
