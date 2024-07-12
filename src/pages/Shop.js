@@ -173,7 +173,7 @@ const Shop = () => {
     }
 
     // 7. show products based on brand
-    const showBrands = () => brands.map((b) => <Radio value={b} name={b} checked={b === brand} onChange={handleBrand} className='pb-1 pl-4 pr-4'>
+    const showBrands = () => brands.map((b) => <Radio key={b} value={b} name={b} checked={b === brand} onChange={handleBrand} className='pb-1 pl-4 pr-4'>
         {b}
     </Radio>)
 
@@ -193,7 +193,7 @@ const Shop = () => {
     }
 
     // 8 show products based on colors
-    const showColors = () => colors.map((c) => <Radio value={c} name={c} checked={c === color} onChange={handleColor} className='pb-1 pl-4 pr-4'>
+    const showColors = () => colors.map((c) => <Radio key={c} value={c} name={c} checked={c === color} onChange={handleColor} className='pb-1 pl-4 pr-4'>
         {c}
     </Radio>)
 
